@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 36px;
+}
+
+.menu {
+  display: flex;
+  margin-right: auto;
+}
+
+.menu-item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+header>h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0;
+  font-size: 1.8em;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mainscreen {
+  width: 100%;
+  height: 698px;
+  background-image: url('./src/IMAGE.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainscreen h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 38.4px;
+  letter-spacing: 0.2px;
+  width: 800px;
+}
+
+.mainscreen button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 0 40px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-family: "Cardo", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section.advantages {
+  display: flex;
+  width: 100%;
+  height: 155px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.adv-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.advantages-items {
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+section.advantages-img {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+
+div.pad {
+  height: 107px;
+}
+
+section.card {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 29px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+}
+
+.card-text:nth-child(even) * {
+  text-align: left;
+  margin-right: 21px;
+  margin-left: 48px;
+
+}
+
+.card-text:nth-child(odd) * {
+  text-align: right;
+  margin-right: 48px;
+  margin-left: 21px;
+}
+
+.card-text h1 {
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 56px;
+}
+
+.card-title {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  line-height: 37px;
+}
+
+.card-price {
+  margin-top: 22px;
+  font-size: 15px;
+  font-family: "Cardo", serif;
+  line-height: 28px;
+  margin-bottom: 22px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card-desc {
+  font-family: "Cardo", serif;
+  line-height: 30px;
+  font-size: 18px;
+  margin-bottom: 23px;
+}
+
+button.to-shop {
+  font-size: 17px;
+  line-height: 22px;
+  border: none;
+  background: none;
+}
+
+button.to-shop:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.options {
+  font-family: "Cardo", serif;
+  line-height: 27px;
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
+div.pieces {
+  width: 1120px;
+  margin-top: 20px;
+  height: 722px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.pieces h1 {
+  font-family: "Cardo", serif;
+  line-height: 39px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+
+.pieces p {
+  font-family: "Cardo", serif;
+  line-height: 33px;
+  margin-bottom: 36px;
+}
+
+.quote {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.quote-text {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  color: #020202;
+  text-align: center;
+  width: 1190px;
+  margin-bottom: 37px;
+}
+
+.quote-author {
+  font-family: "Cardo", serif;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.peculiarities-container {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.peculiarities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 100%;
+  text-align: center;
+}
+
+.peculiarities h1 {
+  font-family: "Cardo", serif;
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: 29px;
+  margin-bottom: 12px;
+}
+
+.peculiarities p {
+  font-family: "Cardo", serif;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 28px;
+  padding: 0 20px;
+}
+
+.peculiarities button {
+  border: none;
+  font-family: "Cardo", serif;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.peculiarities button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.partners {
+  width: 100%;
+  height: 315px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partners p {
+  margin-bottom: 40px;
+  font-family: "Cardo", serif;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+}
+
+footer {
+  width: 100%;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E9E9E9;
+  flex-direction: column;
+}
+
+.links {
+  width: 1140px;
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-item {
+  height: 208px;
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  text-align: center;
+}
+
+.left-item h1 {
+  font-family: "Cardo", serif;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.left-item a {
+  text-decoration: none;
+  color: black;
+  font-family: "Cardo", serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.left-item a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  height: 342px;
+  width: 284px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right p {
+  font-family: "Cardo", serif;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 17px;
+}
+
+.right input {
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.right input::placeholder {
+  font-family: "Cardo", serif;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.info {
+  height: 104px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info p {
+  font-family: "Cardo", serif;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.info a {
+  font-family: "Cardo", serif;
+  font-size: 11px;
+  line-height: 22px;
+}
